@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<title>Bacbone.js Tests</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1"></meta>
+
+		<link rel="stylesheet" href="js/lib/mocha.css" />
+		<script src="js/lib/mocha/mocha.js"></script>
+		<script src="js/lib/mocha/chai.js"></script>
+		<script src="js/lib/mocha/sino.js"></script>
+		<script>
+			// setup
+			var expect = chai.expect;
+			mocha.setup("bdd");
+
+			// Run tests on window load event
+			window.onload = function() {
+				mocha.run();
+			}
+		</script>
+		<script src="js/spec/hello.spec.js"></script>
+	</head>
+	<body>
+		<div id="mocha"></div>
+	</body>
+</html>
